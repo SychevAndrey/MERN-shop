@@ -53227,7 +53227,7 @@ var baseUrl =  false ? undefined : "http://localhost:3000";
 
 /***/ }),
 
-/***/ 0:
+/***/ 1:
 /*!*************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=D%3A%5CEducation%5CWeb-development%5CMERN%5CMERN%20Stack%20-%20The%20Complete%20Guide%5Cpages%5Cindex.js ***!
   \*************************************************************************************************************************************************************************/
@@ -53250,5 +53250,5 @@ module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 
-},[[0,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
