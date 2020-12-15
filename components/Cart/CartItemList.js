@@ -4,16 +4,16 @@ function CartItemList() {
   const user = false;
 
   return (
-    <Segment secondary color="teal" inverted textAlign="center" placeholder>
+    <Segment secondary color="violet" inverted textAlign="center" placeholder>
       <Header icon>
         <Icon name="shopping basket" />
         No products in your cart. Add some!
       </Header>
       <div>
         {user ? (
-          <Button color="orange">View Products</Button>
+          <Button color="teal">View Products</Button>
         ) : (
-          <Button color="blue">Login to Add Products</Button>
+          <Button color="teal">Login to Add Products</Button>
         )}
       </div>
     </Segment>
