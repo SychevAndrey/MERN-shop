@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Form,
   Input,
@@ -21,12 +21,12 @@ const INITIAL_PRODUCT = {
 };
 
 function CreateProduct() {
-  const [product, setProduct] = React.useState(INITIAL_PRODUCT);
-  const [mediaPreview, setMediaPreview] = React.useState("");
-  const [success, setSuccess] = React.useState(false);
-  const [loading, setLoading] = React.useState(false);
-  const [disabled, setDisabled] = React.useState(true);
-  const [error, setError] = React.useState("");
+  const [product, setProduct] = useState(INITIAL_PRODUCT);
+  const [mediaPreview, setMediaPreview] = useState("");
+  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [disabled, setDisabled] = useState(true);
+  const [error, setError] = useState("");
 
   React.useEffect(() => {
     const isProduct = Object.values(product).every(el => Boolean(el));
