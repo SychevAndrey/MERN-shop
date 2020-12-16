@@ -25,7 +25,7 @@ export default async (req, res) => {
             limit: 1
         });
         // 5) If not existing customer, create them based on ther email address
-        const isExistinCustomer = prevCustomer.data.length > 0 ? prevCustomer.data[0].id : false;
+        const isExistinCustomer = prevCustomer.data[0]?.id;
         let newCustomer;
         if (!isExistinCustomer) {
             newCustomer = await stripe.customers.create({
