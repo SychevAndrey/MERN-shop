@@ -3,6 +3,7 @@ import baseUrl from "../../utils/baseUrl";
 import cookie from "js-cookie";
 import axios from "axios";
 import { useEffect, useState, useRef } from "react";
+import formatDate from "../../utils/formatDate";
 
 function AccountPermissions() {
   const [users, setUsers] = useState([]);
@@ -86,8 +87,8 @@ function UserPermission({ user, changeUserPermissions }) {
       </Table.Cell>
       <Table.Cell>{name}</Table.Cell>
       <Table.Cell>{email}</Table.Cell>
-      <Table.Cell>{createdAt}</Table.Cell>
-      <Table.Cell>{updatedAt}</Table.Cell>
+      <Table.Cell>{formatDate(createdAt)}</Table.Cell>
+      <Table.Cell>{formatDate(updatedAt)}</Table.Cell>
       <Table.Cell>{role}</Table.Cell>
     </Table.Row>
   );
