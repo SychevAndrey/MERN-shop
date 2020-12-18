@@ -1,7 +1,5 @@
 node_modules
 .next
-build
-dist
 
 next.config.js
 .env
